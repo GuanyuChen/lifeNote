@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="Shortcut Icon" href="./static/img/heart.png">
     <link rel="Bookmark" href="./static/img/heart.png">
     <link rel="apple-touch-icon-precomposed" href="./static/img/heart.png">
+    <link rel="stylesheet" href="./static/css/flower.css">
     <title>给大宝哒</title>
 </head>
-<body>
-    <div>大宝我爱你么么哒</div>
+
+<body id="body">
+    <!--第一屏 打字机出文字和图片-->
+    <div class="screen" id="screen1">第一屏内容</div>
+    <!--第二屏 canvas画心-->
+    <div class="screen" id="screen2">
+        
+    </div>
+
+    <!--第三屏 花絮-->
+    <div class="screen" id="screen3">第三屏内容</div>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <div style="clear:both;"></div>
+
+    <footer style="">
+        <span>Powered By guanyu（就是你最爱的老公啦~）</span>
+    </footer>
+
+    <script src="./static/js/jquery.js"></script>
+    <script src="./static/js/bloom.js"></script>
 </body>
+
 </html>
