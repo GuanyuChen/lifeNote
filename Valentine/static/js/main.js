@@ -200,8 +200,10 @@ $(() => {
     }
 
     function startCanvasHeart(flag) {
-        // 
+        
+        // 每次画心之前要清屏及清空points数组
         if(flag){
+            // 第一次画心不需要把起始点translate回去
             context.translate(-offX, -offY);
         }
         context.clearRect(0,0,canvasHeart.width,canvasHeart.height);
